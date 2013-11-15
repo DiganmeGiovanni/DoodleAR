@@ -1,0 +1,154 @@
+
+/*
+	Estilos para el articulo sobre el aparato respiratorio.
+	Aplicamos un diseño estilo revista/periodico clasico, 
+	utilizando fuentes con serifa.
+*/
+
+article
+{
+	color: rgb(68, 68, 68);
+	padding: 5%;
+	padding-right: 15%;
+	padding-top: 0%;
+}
+
+article p
+{
+	font-size: 0.95em;
+	text-align: justify;
+}
+
+body
+{
+	background: rgb(242, 242, 242);
+	font-family: 'Droid Serif', Serif, Helvetica, Arial;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+	color: #000;
+	font-family: 'Open Sans Condensed', sans-serif, Helvetica, Arial;
+}
+
+h1
+{
+	font-size: 4em;
+	font-weight: 700;
+}
+
+nav
+{
+	background: rgb(57, 56, 50);
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif, Helvetica, Arial;
+	font-size: 1em;
+	left: 0;
+	padding: 1%;
+	padding-left: 0%;
+	padding-top: 2.3%;
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+
+nav a
+{
+	color: white;
+	padding-left: 2%;
+	padding-right: 2%;
+	text-decoration: none;
+}
+
+nav a:hover
+{
+	text-decoration: underline;
+}
+
+section
+{
+	background: rgb(248, 248, 248);
+	box-shadow: 0px 10px 40px #000;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5%;
+	padding-left: 2%;
+	width: 70%;
+}
+
+/* --- ---- --- --- */
+
+.colDer
+{
+    -webkit-box-ordinal-group: 2;   /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-ordinal-group: 2;      /* OLD - Firefox 19- */
+    -ms-flex-order: 2;              /* TWEENER - IE 10 */
+    -webkit-order: 2;               /* NEW - Chrome */
+    order: 2;                       /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.colIzq
+{
+    -webkit-box-ordinal-group: 1;   /* OLD - iOS 6-, Safari 3.1-6 */
+    -moz-box-ordinal-group: 1;      /* OLD - Firefox 19- */
+    -ms-flex-order: 1;              /* TWEENER - IE 10 */
+    -webkit-order: 1;               /* NEW - Chrome */
+    order: 1;                       /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.columnas
+{
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.icon-mini
+{
+	padding: 5px;
+	padding-bottom: 0px;
+	height: 15px;
+	width: 16px;
+}
+
+.icon-medio
+{
+	padding: 8px;
+	padding-bottom: 0px;
+	height: 24px;
+	width: 24px;
+}
+
+.lista-contenido a
+{
+	text-decoration: none;
+}
+
+/* ------- ------------ ---------- -------- */
+
+#articulo
+{
+	width: 100%;
+}
+
+#indice
+{
+	transition: all 0.5s ease-in;
+	opacity: 0;
+	padding-left: 0px;
+	width: 0%;
+}
+
+#indice:target
+{
+	opacity: 1;
+	width: 30%;
+}
+
+#lista-contenido
+{
+	position: fixed;
+	top: 25%;
+}
