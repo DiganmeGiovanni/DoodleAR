@@ -5,10 +5,10 @@
         <title>Aparato respiratorio</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script type="application/javascript" src="javascript/doodle.js"></script>
     </head>
     
-    <body>
-        
+    <body onload="draw();">
         <section id="contenido-principal">
             <header>
                 <a class="link" href="#conceptos">Conceptos basicos</a>
@@ -79,15 +79,12 @@
                 </div>
             </div>
 
-            <div id="doodle-area"></div>
+            <canvas id="doodle-canvas" width="600" height="200"></canvas>
 
-            <input class="campo-busqueda" type="text" size="100" placeholder="Buscar..."><br><br>
-
+            <!-- Area de busqueda -->
+            <br><br><input class="campo-busqueda" type="text" size="100" placeholder="Buscar..."><br><br>
             <a id="buscar" class="boton" href="">Buscar con google</a>
             <a id="ver-articulo" class="boton" href="articulo.html">Ver articulo completo</a>
         </section>
-        
-        
     </body>
-    
 </html>
