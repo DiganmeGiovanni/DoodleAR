@@ -5,10 +5,10 @@
         <title>Aparato respiratorio</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <script type="application/javascript" src="javascript/doodle.js"></script>
+        <script type="application/javascript" src="doodle.js"></script>
     </head>
     
-    <body onload="draw();">
+    <body onload="init();">
         <section id="contenido-principal">
             <header>
                 <a class="link" href="#conceptos">Conceptos basicos</a>
@@ -79,10 +79,18 @@
                 </div>
             </div>
 
+            <div style="text-align: center; margin-top: 7%;">
+                <select id="tipo-particulas" name="selCombo" SIZE=1 onChange="cambiaColores()"> 
+                <option VALUE="op1">Elija un tipo de particulas</option>
+                <option VALUE="op2">Particulas de Smog</option>
+                <option VALUE="op3">Particulas de Agua</option>
+                <option VALUE="op4">Particulas de Aire Limpio</option> 
+                </select>
+            </div>
             <canvas id="doodle-canvas" width="600" height="200"></canvas>
 
             <!-- Area de busqueda -->
-            <br><br><input class="campo-busqueda" type="text" size="100" placeholder="Buscar..."><br><br>
+            <br><br><input id="campo-buscar" class="campo-busqueda" type="text" size="100" placeholder="Buscar..."><br><br>
             <a id="buscar" class="boton" href="">Buscar con google</a>
             <a id="ver-articulo" class="boton" href="articulo.html">Ver articulo completo</a>
         </section>
