@@ -7,91 +7,160 @@
         <link rel="stylesheet" type="text/css" href="css/articulo.css">
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif">
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300">
+        <script type="application/javascript" src="articulo.js"></script>
+        <script type="text/javascript" src="jquery-1.9.1.js"></script>
     </head>
     
     <body>
 
         <nav>
             <a href="doodle.html"><img src="icons/ic_left_arrow.png" class="icon-mini">Regresar al doodle</a>
-            <a href="#indice" style="margin-left: 5%;"><img src="icons/ic_list.png" class="icon-mini">Indice</a>
-            <a href="">Bibliografia</a>
-            <a href="">Acerca de...</a>
+            <a href="javascript: void(0);" onclick="mostrarIndice()" style="margin-left: 5%;"><img src="icons/ic_list.png" class="icon-mini">Indice</a>
+            <!--a href="">Bibliografia</a>
+            <a href="">Acerca de...</a-->
         </nav>
 
         <section class="columnas">
             <aside id="indice" class="colIzq">
                 <div id="lista-contenido">
-                    <a href="#no-index"><img src="icons/contract.png" class="icon-medio"></a>
+                    <!--a href="#no-index"><img src="icons/contract.png" class="icon-medio"></a-->
                     <a href="#no-index" style="text-decoration: none;"><h2 style="display:inline;">Contenido.</h2></a>
                     <ul>
-                        <li>--</li>
-                        <li>--</li>
+                        <li><a href="#introduccion">Introduccion</a></li>
+                        <li><a href="#componentes">Componenetes del aparato</a></li>
+                        <li><a href="#ins-ex">Inspiracion y exhalacion</a></li>
+                        <li><a href="#transtornos">Transtornos del aparato</a></li>
                     </ul>
                 </div>
             </aside>
             <article id="articulo" class="colDer">
-                <h1>Aparato respiratorio</h1>
-                <h2>Introducción.</h2>
-                <p>
-                    ¿Sabias que cada día respiramos aproximadamente 20,000 veces 
-                    y para cuando tengas 70 años habremos aspirado al menos 600 
-                    millones de veces?
+                
+                <div style="text-align: center">
+                    <h1>Aparato respiratorio</h1>
+                    <img src="images/aparatorespiratorio.jpg" height="350" width="350">
+                </div>
+                
+                <div class="capitulo" id="introduccion">
+                    <h2>Introducción.</h2>
+                    <p>
+                        ¿Sabias que cada día respiramos aproximadamente 20,000 veces 
+                        y para cuando tengas 70 años habremos aspirado al menos 600 
+                        millones de veces?
 
-                    Hablando de pulmones y del sistema respiratorio, este
-                    esta constituido por varias partes, una de las mas importantes
-                    son.<br>
-                </p>
-                <h4>Las vías respiratorias:</h4>
-                <ul>
-                    <li>Fosas nasales.</li>
-                    <li>La faringe.</li>
-                    <li>La laringe.</li>
-                    <li>La tráquea.</li>
-                    <li>Los bronquios.</li>
-                    <li>Los bronquíolos.</li>
-                </ul>
-                <p>
-                    La boca también es, un órgano por donde entra y 
-                    sale el aire durante la respiración.
-                </p>
+                        Hablando de pulmones y del sistema respiratorio, este
+                        esta constituido por varias partes, una de las mas importantes
+                        son.<br>
+                    </p>
+                    <h4>Las vías respiratorias:</h4>
+                    <ul>
+                        <li>Fosas nasales.</li>
+                        <li>La faringe.</li>
+                        <li>La laringe.</li>
+                        <li>La tráquea.</li>
+                        <li>Los bronquios.</li>
+                        <li>Los bronquíolos.</li>
+                    </ul>
+                    <p>
+                        La boca también es, un órgano por donde entra y 
+                        sale el aire durante la respiración.
+                    </p>
+                </div>
 
-                <h4>La laringe</h4>
-                <p>
-                    Está situada en el comienzo de la tráquea. Es una cavidad formada 
-                    por cartílagos que presenta una saliente llamada comúnmente nuez. 
-                    En la laringe se encuentran las cuerdas vocales que, al vibrar, 
-                    producen la voz.
-                </p>
-                <h4>La tráquea</h4>
-                <p>
-                    Es un conducto de unos doce centímetros de longitud. Está situada delante 
-                    del esófago.
-                </p>
-                <h4>Los bronquios</h4>
-                <p>
-                    Son los dos tubos en que se divide la tráquea. Penetran en los pulmones, 
-                    donde se ramifican una multitud de veces, hasta llegar a formar los bronquiolos.
-                </p>
+                <div class="capitulo" id="componentes">
+                    <h2>Componentes</h2>
+                    <h4>La laringe</h4>
+                    <p>
+                        Está situada en el comienzo de la tráquea. Es una cavidad formada 
+                        por cartílagos que presenta una saliente llamada comúnmente nuez. 
+                        En la laringe se encuentran las cuerdas vocales que, al vibrar, 
+                        producen la voz.
+                    </p>
+                    <h4>La tráquea</h4>
+                    <p>
+                        Es un conducto de unos doce centímetros de longitud. Está situada delante 
+                        del esófago.
+                    </p>
+                    <h4>Los bronquios</h4>
+                    <p>
+                        Son los dos tubos en que se divide la tráquea. Penetran en los pulmones, 
+                        donde se ramifican una multitud de veces, hasta llegar a formar los bronquiolos.
+                    </p>
 
-                <h4>Alvéolos</h4>
-                <p>
-                    En los alvéolos se realiza el intercambio gaseoso: cuando los alvéolos se llenan 
-                    con el aire inhalado, el oxígeno se difunde hacia la sangre de los capilares, 
-                    que es bombeada por el corazón hasta los tejidos del cuerpo.
-                </p>
+                    <h4>Alvéolos</h4>
+                    <p>
+                        En los alvéolos se realiza el intercambio gaseoso: cuando los alvéolos se llenan 
+                        con el aire inhalado, el oxígeno se difunde hacia la sangre de los capilares, 
+                        que es bombeada por el corazón hasta los tejidos del cuerpo.
+                    </p><br>
+                    <img src="images/pulmones-partes.jpg">
+                </div>
 
-                <h2>Proceso de inspiración y exhalación</h2>
-                <h4>Inspiración</h4>
-                <p>
-                    Cuando el diafragma se contrae y se mueve hacia abajo, los músculos<br>
-                    pectorales menores y los intercostales presionan las costillas hacia fuera.
-                </p>
+                <div class="capitulo" id="ins-ex">
+                    <h2>Proceso de inspiración y exhalación</h2>
+                    <h4>Inspiración</h4>
+                    <p>
+                        Cuando el diafragma se contrae y se mueve hacia abajo, los músculos<br>
+                        pectorales menores y los intercostales presionan las costillas hacia fuera.
+                    </p>
 
-                <h4>Exhalación.</h4>
-                <p>
-                    Cuando el diafragma se relaja, adopta su posición normal, curvado hacia arriba,<br>
-                    entonces los pulmones se contraen y el aire se expele.
-                </p>
+                    <h4>Exhalación.</h4>
+                    <p>
+                        Cuando el diafragma se relaja, adopta su posición normal, curvado hacia arriba,<br>
+                        entonces los pulmones se contraen y el aire se expele.
+                    </p>
+                </div>
+
+                <div class="capitulo" id="transtornos">
+                    <h2 id="transtornos">Trastornos del Aparato Respiratorio</h2>
+                    <p>
+                        Entre los síntomas más corrientes de los trastornos respiratorios se destacan la tos, el ahogo (disnea), el dolor torácico, la respiración sibilante, el estridor (sonido semejante a un graznido al respirar), la hemoptisis (esputo con sangre), la cianosis (coloración azulada de la piel), los dedos en palillo de tambor y la insuficiencia respiratoria. Algunos de estos síntomas no siempre indican un problema respiratorio. El dolor de pecho también puede ser consecuencia de un problema cardíaco o astrointestinal.
+                    </p>
+
+                    <h4 id="Tos">Tos</h4>
+                    <p>
+                        Cuando el diafragma se contrae, la cavidad torácica se ensancha reduciendo la presión interior. Para igualar la presión, el aire entra en los pulmones. Cuando el diafragma se relaja, la cavidad torácica se contrae aumentando de este modo la presión y expulsando el aire de los pulmones.
+                    </p>
+
+                    <h4 id="ahogo">Ahogo</h4>
+                    <p>
+                        El tipo más frecuente de ahogo es el que aparece al realizar un esfuerzo físico. Durante el ejercicio, el cuerpo produce más anhídrido carbónico y consume mayor cantidad de oxígeno. El centro respiratorio del cerebro aumenta la frecuencia respiratoria cuando las concentraciones de oxígeno en sangre son bajas, o cuando las del anhídrido carbónico son altas. Por otra parte, si la función pulmonar y cardíaca son anormales, incluso un pequeño esfuerzo puede aumentar de forma alarmante la frecuencia respiratoria y la disnea. En su forma más grave, la disnea puede incluso manifestarse durante el reposo.
+                    </p>
+
+                    <h4 id="dolor-pecho">Dolor de pecho</h4>
+                    <p>
+                        El dolor torácico puede provenir de la pleura, de los pulmones, de la pared del tórax o de estructuras internas que no forman parte del aparato respiratorio, especialmente el corazón.El dolor pleural, un dolor agudo a consecuencia de una irritación del revestimiento de los pulmones, empeora al efectuar una inspiración profunda y al toser.
+                    </p>
+
+                    <h4 id="sibilancias">Sibilancias</h4>
+                    <p>
+                        La respiración sibilante es un sonido musical, como un silbido, que se produce durante la respiración, a consecuencia de la obstrucción parcial de las vías respiratorias. La obstrucción en cualquier punto de la vía aérea provoca sibilancias. Sus causas pueden ser un estrechamiento general de las vías respiratorias (como asma o la enfermedad pulmonar obstructiva crónica), un estrechamiento local (como un tumor), o la presencia de una partícula extraña alojada en las vías aéreas. El asma es la causa más frecuente de sibilancias recurrentes.
+                    </p>
+
+                    <h4 id="estridor">Estridor</h4>
+                    <p>
+                        El estridor es un sonido semejante a un graznido y es predominantemente inspiratorio; es consecuencia de una obstrucción parcial de la garganta (faringe), de la caja de los órganos de la fonación (laringe) o de la tráquea.
+                    </p>
+
+                    <h4>Hemoptisis</h4>
+                    <p>
+                        La hemoptisis es una expectoración de sangre proveniente del tracto respiratorio. El esputo teñido de sangre es más bien corriente y no siempre es grave. Alrededor del 50 por ciento de los casos se debe a infecciones como la bronquitis aguda o crónica. No obstante, una hemoptisis abundante requiere un diagnóstico rápido por parte del médico.
+                    </p>
+
+                    <h4>Cianosis</h4>
+                    <p>
+                        La cianosis es una coloración azulada de la piel causada por una oxigenación insuficiente de la sangre. La cianosis se produce cuando la sangre desprovista de oxígeno, que es más azulada que roja, circula por los vasos de la piel. Habitualmente, la cianosis que está restringida a los dedos de las manos y de los pies, se produce porque la sangre fluye muy lentamente a través de los miembros.
+                    </p>
+
+                    <h4>Dedos en palillo de tambor</h4>
+                    <p>
+                        Los dedos en palillo de tambor son un ensanchamiento de las puntas de los dedos de las manos y de los pies, con una pérdida del ángulo de salida de la uña. A menudo esta deformación de los dedos (que en sí misma no reviste gravedad) es consecuencia de una enfermedad pulmonar, aunque otras enfermedades también pueden producirla. En algunas familias los dedos en palillo de tambor no están relacionados con ninguna enfermedad y son hereditarios.
+                    </p>
+
+                    <h4>Insuficiencia respiratoria</h4>
+                    <p>
+                        La insuficiencia respiratoria es una enfermedad en la cual disminuyen los valores de oxígeno en sangre o aumentan los de anhídrido carbónico de forma peligrosa. La insuficiencia respiratoria se debe al intercambio inadecuado de oxígeno y anhídrido carbónico entre los pulmones y la sangre o a una alteración de la ventilación (movimiento del aire hacia dentro y fuera de los pulmones).
+                    </p>
+                </div>
 
             </article>
         </section>

@@ -7,7 +7,9 @@
 
 article
 {
+	
 	color: rgb(68, 68, 68);
+	margin-left: 5%;
 	padding: 5%;
 	padding-right: 15%;
 	padding-top: 0%;
@@ -35,6 +37,16 @@ h1
 {
 	font-size: 4em;
 	font-weight: 700;
+}
+
+h2
+{
+	color: #2980B9;
+}
+
+h4
+{
+	color: #2C3E50;
 }
 
 nav
@@ -76,7 +88,25 @@ section
 	width: 70%;
 }
 
+ul li a
+{
+	color: #C0392B;
+    font-family: serif, 'Open Sans Condensed', Arial;
+    font-size: 1.05em;
+    text-decoration: none;
+}
+
+ul li a:hover
+{
+	text-decoration: underline;
+}
+
 /* --- ---- --- --- */
+
+.capitulo
+{
+	padding-top: 10%;
+}
 
 .colDer
 {
@@ -85,6 +115,7 @@ section
     -ms-flex-order: 2;              /* TWEENER - IE 10 */
     -webkit-order: 2;               /* NEW - Chrome */
     order: 2;                       /* NEW, Spec - Opera 12.1, Firefox 20+ */
+
 }
 
 .colIzq
@@ -135,16 +166,17 @@ section
 
 #indice
 {
-	transition: all 0.5s ease-in;
+	transition: all 0.2s ease-in;
 	opacity: 0;
 	padding-left: 0px;
 	width: 0%;
+	pointer-events: none;
 }
 
 #indice:target
 {
-	opacity: 1;
-	width: 30%;
+	/*opacity: 1;
+	width: 30%;*/
 }
 
 #lista-contenido

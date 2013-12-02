@@ -6,6 +6,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <script type="application/javascript" src="doodle.js"></script>
+        <script type="text/javascript" src="jquery-1.9.1.js"></script>
     </head>
     
     <body onload="init();">
@@ -79,6 +80,92 @@
                 </div>
             </div>
 
+            <div id="info-smog" class="area-info-deslizable-izq">
+                <div style="text-align: right">
+                    <a href="#close" onclick="showInfo=false">
+                        <img src="icons/left-arrow.png" height="42" width="42">
+                    </a>
+                </div>
+                <div style="padding: 1em; padding-top: 0%;">
+                    <h1>Smog en los pulmones.</h1>
+                    <div style="text-align: center">
+                        <img src="images/smog.jpg" height="200" width="300">
+                    </div>
+                    <p>
+                        El smog reduce la visibilidad natural y, a menudo, irrita los ojos y el aparato 
+                        respiratorio.
+                    </p>
+
+                    <p>
+                        En zonas urbanas muy pobladas, la tasa de mortalidad suele aumentar 
+                        de forma considerable durante periodos prolongados de smog, en particular cuando un 
+                        proceso de inversión térmica crea una cubierta sobre la ciudad que no permite su disipación.
+                    </p>
+
+                    <p>
+                        El smog se produce con más frecuencia en ciudades con costa o cercanas a ella, por ejemplo en Los Ángeles o Tokyo, donde constituye un problema muy grave, pero también en grandes urbes situadas en amplios valles, como la ciudad de México.
+                    </p>
+
+                    
+                </div>
+            </div>
+
+            <div id="info-agua" class="area-info-deslizable-izq">
+                <div style="text-align: right">
+                    <a href="#close" onclick="showInfo=false">
+                        <img src="icons/left-arrow.png" height="42" width="42">
+                    </a>
+                </div>
+                <div style="padding: 1em; padding-top: 0%;">
+                    <h1>Agua en los pulmones.</h1>
+                    <br>
+                    <div style="text-align: center">
+                        <img src="images/pulmones-agua.jpg" height="200" width="300">
+                    </div>
+                    <br>
+                    <p>
+                        La persona que por alguna razon tenga agua dentro de los pulmones tendria problemas 
+                        para respirar adecuadamente, se cansaria
+                        rapidamente al caminar y tendria sintomas de anemia.
+                    </p>
+
+                    <p>
+                        Dentro de los pulmones se da el intercambio de oxigeno, al estar ocupado este por agua,
+                        no hay suficiente espacio para almacenar oxigeno para la sangre, por otro lado, si no se
+                        atiende el problema, el agua al ser algo ajeno al cuerpo producira una secresion de mas agua
+                        interna. por ende, mas problemas para las vias respiratorias.
+                    </p>
+                </div>
+            </div>
+
+            <div id="info-sanos" class="area-info-deslizable-izq">
+                <div style="text-align: right">
+                    <a href="#close" onclick="showInfo=false">
+                        <img src="icons/left-arrow.png" height="42" width="42">
+                    </a>
+                </div>
+                <div style="padding: 1em; padding-top: 0%;">
+                    <h1>Pulmones sanos.</h1>
+                    <div style="text-align: center">
+                        <img src="images/pulmones-sanos.jpg" height="200" width="300">
+                    </div>
+                    <p>
+                        Los pulmones son los órganos en los cuales la sangre recibe oxígeno 
+                        desde el aire y a su vez la sangre se desprende del dióxido de carbono 
+                        el cual pasa al aire. Este intercambio, se produce mediante la difusión 
+                        del oxígeno y el dióxido de carbono entre la sangre y los alvéolos que 
+                        forman los pulmones. 
+                    </p>
+
+                    <p>
+                        La función de los pulmones es realizar el intercambio 
+                        gaseoso con la sangre, por ello los alvéolos están en estrecho contacto con capilares. 
+                        En los alvéolos se produce el paso de oxígeno desde el aire a la sangre y el paso de 
+                        dióxido de carbono desde la sangre al aire.
+                    </p>
+                </div>
+            </div>
+
             <div style="text-align: center; margin-top: 7%;">
                 <select id="tipo-particulas" name="selCombo" SIZE=1 onChange="cambiaColores()"> 
                 <option VALUE="op1">Elija un tipo de particulas</option>
@@ -91,7 +178,7 @@
 
             <!-- Area de busqueda -->
             <br><br><input id="campo-buscar" class="campo-busqueda" type="text" size="100" placeholder="Buscar..."><br><br>
-            <a id="buscar" class="boton" href="">Buscar con google</a>
+            <a id="buscar" class="boton" href="#info-smog">Buscar con google</a>
             <a id="ver-articulo" class="boton" href="articulo.html">Ver articulo completo</a>
         </section>
     </body>
