@@ -3,7 +3,7 @@ Un sitio bastante sencillo que simula la pagina principal de google
 con una especia de 'doodle' sobre el sistema respiratorio humano.
 
 Si te encuentras en la misma clase que yo, o en cualquier lugar
-del universo. Sientete libre de copiar, analizar y comprender
+del universo. Sientete libre de forkear, analizar, comprender y mejorar
 el codigo fuente del proyecto.
 
 
